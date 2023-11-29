@@ -3,7 +3,6 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-
 @app.route("/voice", methods=['GET', 'POST'])
 def voice():
     # Start a TwiML response
