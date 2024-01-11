@@ -29,13 +29,13 @@ raw_config = json.loads(open('Config.txt', 'r').read())
 client_discord = commands.Bot(command_prefix='')
 slash = SlashCommand(client_discord, sync_commands=True)
 guild = discord.Guild
-account_sid = raw_config['account_sid']
-auth_token = raw_config['auth_token']
-your_twilio_phone_number = raw_config['Twilio Phone Number']
-ngrok = raw_config['ngrok_url']
+account_sid = raw_config['AC74ca413fec8ede8bf68b1924eaaddf4b']
+auth_token = raw_config['273241c941393abfd28672c2ab0cbd58']
+your_twilio_phone_number = raw_config['+18552795141']
+ngrok = raw_config['https://8db2e2e0a7fe.ngrok.app -> http://localhost:5000']
 client = Client(account_sid, auth_token)
-server_id = int(raw_config['server_id'])
-
+server_id = int(raw_config['1195094611945853028'])
+bot_token = raw_config['MTE5NTA4OTY5OTkxNjc0Njc4Mw.G-PR0I.3dMo7maahhG5pXq5EfAqMvWWcijH-L2ZjwZBNY']
 app = Flask(__name__)
 
 @slash.slash(
